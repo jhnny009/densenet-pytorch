@@ -17,7 +17,9 @@
 
 训练网络代码放置在train.py中
 根据提供在cfg.py中的url下载预训练权重文件，然后在cfg.py中设置好预训练模型的路径，训练集的路径，然后直接在终端中运行 
-python3 train.py 即可
+'''python
+python3 train.py 
+'''
 
 ## 参数
 
@@ -25,14 +27,18 @@ python3 train.py 即可
 
 ## 评估模型准确率
 
-评估模型的代码放置在eval.py中， 在cfg.py中设置好训练好模型保存的路径TRAINED_MODEL,然后直接运行 python3 eval.py
-
+评估模型的代码放置在eval.py中， 在cfg.py中设置好训练好模型保存的路径TRAINED_MODEL,然后直接运行
+'''python
+python3 eval.py
+'''
 
 ## 预测
 
 输入单张图片进行预测的代码放置在predict.py中,设置好TRAINED_MODEL,和网络输出值与类别的字典labels_to_classes,
-然后直接运行 python3 predicts.py
-
+然后直接运行 
+'''python
+python3 predicts.py
+'''
 
 代码很简单，适合初学者来熟悉pytorch使用流程，虽然简单但是很实用，中间介绍了从数据集读入到训练模型，再到输入图片进行预测，
 这些过程均包含在内，会对简单的图像分类有一个整体的清晰的认识，代码文件中的注释及一些注意事项的注释介绍也比较详细
