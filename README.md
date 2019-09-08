@@ -17,7 +17,7 @@
 
 训练网络代码放置在train.py中
 根据提供在cfg.py中的url下载预训练权重文件，然后在cfg.py中设置好预训练模型的路径，训练集的路径，然后直接在终端中运行 
-'''python
+''' python
 python3 train.py 
 '''
 
@@ -28,15 +28,16 @@ python3 train.py
 ## 评估模型准确率
 
 评估模型的代码放置在eval.py中， 在cfg.py中设置好训练好模型保存的路径TRAINED_MODEL,然后直接运行
-'''python
+''' python
 python3 eval.py
+
 '''
 
 ## 预测
 
 输入单张图片进行预测的代码放置在predict.py中,设置好TRAINED_MODEL,和网络输出值与类别的字典labels_to_classes,
 然后直接运行 
-'''python
+''' python
 python3 predicts.py
 '''
 
