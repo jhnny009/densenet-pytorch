@@ -51,7 +51,7 @@ model = densenet169(num_classes=cfg.NUM_CLASSES)
 print(model)
 
 ###load the pretrained weights，下载的预训练模型
-pretrained_path = 'PRETRAINED_MODEL
+pretrained_path = PRETRAINED_MODEL
 
 print("Initializing the network ...")
 #读入预训练模型的参数
