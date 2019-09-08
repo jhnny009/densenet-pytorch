@@ -68,7 +68,7 @@ from collections import OrderedDict
 new_state_dict = OrderedDict()
 
 for k,v in state_dict.items():
-    # print(k)  #打印预训练模型的键，发现与网络定义的键有一定的差别，因而需要将键值进行定应的更改，
+    # print(k)  #打印预训练模型的键，发现与网络定义的键有一定的差别，因而需要将键值进行对应的更改，将键值分别对应打印出来就可以看出不同，根据不同进行修改
     #torchvision中的网络定义，采用了正则表达式，来更改键值，因为这里简单，没有再去构建正则表达式
     # 直接利用if语句筛选不一致的键
     ###修正键值的不对应
