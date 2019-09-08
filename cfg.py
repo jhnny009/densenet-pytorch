@@ -21,3 +21,10 @@ PRETRAINED_MODEL = './dense169.pth'
 #数据集的存放位置
 TRAIN_DATASET_DIR = './datasets/train_data_v2'
 VAL_DATASET_DIR = './datasets/val_data_v2'
+
+labels_to_classes = {
+"""
+这里需要加入自己的最终预测对应字典，例如：
+  '0': '花'
+"""
+}
