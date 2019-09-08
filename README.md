@@ -39,5 +39,6 @@
 
 这个代码可以应用于华为云的modelarts平台，进行模型的导入与模型的部署，config.json和customize_service.py放置在deployment文件夹的model中，
 当训练好之后，将得到的pth也放置在model文件夹中，然后导入华为云的obs存储，然后导入模型即可
+这一部分参考华为云bbs，https://bbs.huaweicloud.com/forum/thread-14845-1-1.html
 
 
