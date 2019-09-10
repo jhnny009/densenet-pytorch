@@ -62,7 +62,8 @@ out = model(batch_images)
 
 
 prediction = torch.max(out, 1)[1]
-print(labels2classes[str(prediction)])
+#得到的prediction为cuda的tensor格式，需要转换为cpu格式，然后将tensor转换为numpy
+print(labels2classes[str(prediction.cpu().numpy())])
 
 
 
